@@ -11,6 +11,10 @@ class CharCountA {
         if (args.length < 1) {
             return;
         }
+        /*
+        Note: in the below, length has parentheses.
+        This indicates that a method has been invoked to access a field member.
+        */
         int length = args[0].length();
         int lines = ( (length - 1) / LINE_WIDTH) + 1;
         System.out.println("has " + length + " characters");
