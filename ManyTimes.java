@@ -6,18 +6,13 @@ class ManyTimes {
         } else {
             String newLine = System.getProperty("line.separator");
             String s = args[0];
-            for(int i = 0; i < 3; ++i) {
-                System.out.print(s + " ");
+            int[] integerArray = {3,9,10};
+            for(int i = 0; i < integerArray.length; ++i) {
+                for(int j = 0; j < integerArray[i]; ++j) {
+                    System.out.print(s + " ");
+                }
+                System.out.print(newLine);
             }
-            System.out.print(newLine);
-            for(int i = 0; i < 9; ++i) {
-                System.out.print(s + " ");
-            }
-            System.out.print(newLine);
-            for(int i = 0; i < 10; ++i) {
-                System.out.print(s + " ");
-            }
-            System.out.print(newLine);
         }
     }
 
