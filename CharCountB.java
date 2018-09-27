@@ -8,12 +8,16 @@ class CharCountB {
         }
         int length = args[0].length();
         int lines = ( (length - 1) / LINE_WIDTH) + 1;
-        System.out.println("has " + length + " characters");
-        String output = "needs " + lines + " line";
-        if (lines > 1) {
-            output += "s";
+        String characterOutput = ("has " + length + " character");
+        String lineOutput = "needs " + lines + " line";
+        if (length > 1) {
+            characterOutput += "s";
         }
-        System.out.println(output);
+        if (lines > 1) {
+            lineOutput += "s";
+        }
+        System.out.println(characterOutput);
+        System.out.println(lineOutput);
     }
 
 }
